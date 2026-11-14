@@ -1,0 +1,3 @@
+permissions:
+  '@vezironi/veyra-ui':
+    skills: false

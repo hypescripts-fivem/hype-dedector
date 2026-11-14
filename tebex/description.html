@@ -1,0 +1,101 @@
+<p>Put real security on your server&#39;s doors. Place walk-through metal detectors at malls, banks, hospitals and courthouses straight from an in-game admin panel. When a player carrying a weapon walks through, the gate turns red, beeps for everyone nearby and alerts police and security. Officers can also search people by hand with a handheld detector. In line with roleplay rules, the result only ever says &quot;metal detected&quot;, never what was found.</p>
+
+<table>
+    <tbody>
+        <tr>
+            <td><strong>Walk-Through Detectors</strong></td>
+            <td>Place as many detector gates as you like. Admins stand where the gate should go, face the way people walk through and click Use my position. The prop is spawned only for players nearby and sits on the floor automatically.</td>
+        </tr>
+        <tr>
+            <td><strong>Reliable Pass Detection</strong></td>
+            <td>Each gate has its own trigger box that turns with the prop, so walking past the side never sets it off. The path between checks is traced as well, so sprinting through can&#39;t skip the scan. Standing inside the gate triggers it once, and vehicles are ignored.</td>
+        </tr>
+        <tr>
+            <td><strong>Server Side Scan</strong></td>
+            <td>The client only reports which gate it walked through. Distance, cooldown, job and the player&#39;s whole inventory are checked on the server, so the result can&#39;t be faked from the client.</td>
+        </tr>
+        <tr>
+            <td><strong>Roleplay Friendly Results</strong></td>
+            <td>Alerts, notifications, logs, the admin panel and Discord only say &quot;metal detected&quot;. Item names, categories and amounts are never sent to anyone or stored anywhere, not even in the database.</td>
+        </tr>
+        <tr>
+            <td><strong>Metal Categories</strong></td>
+            <td>Firearms, knives and melee weapons, explosives and ammunition come ready, and each gate picks which ones it reacts to. Add exact item names or patterns such as ^weapon_, and keep non-metal items like bats or flashlights out of it. Upper and lower case item names both match.</td>
+        </tr>
+        <tr>
+            <td><strong>Light &amp; Sound</strong></td>
+            <td>The gate lights up red with an alarm beep when it finds metal and green when the player is clean, for everyone around it. Colors, range, duration and sounds are all configurable.</td>
+        </tr>
+        <tr>
+            <td><strong>Police &amp; Security Alerts</strong></td>
+            <td>Alarms go to on-duty players in the jobs you choose, with a notification and a temporary map blip. The alert is a function in the config, so you can hook it into ps-dispatch, cd_dispatch, core_dispatch or your own dispatch, and examples are included.</td>
+        </tr>
+        <tr>
+            <td><strong>Alerts Per Detector</strong></td>
+            <td>Turn police alerts on or off for each gate from the admin panel. A gate with alerts off still beeps red and logs the alarm, which is ideal for busy entrances or gates that should only deter.</td>
+        </tr>
+        <tr>
+            <td><strong>Job Exemptions</strong></td>
+            <td>Police and security walk through with a green light while on duty. A config hook lets you add your own exceptions, for example a weapon license.</td>
+        </tr>
+        <tr>
+            <td><strong>Hand Detector</strong></td>
+            <td>Officers search a player through ox_target or qb-target, or by using the item. The searcher walks around the player with the detector in hand while the player holds their hands up, then gets &quot;metal detected&quot; or &quot;clean&quot;, and everyone nearby hears the beep. Required jobs, the required item, duration, distance and animations are configurable.</td>
+        </tr>
+        <tr>
+            <td><strong>In-Game Admin Panel</strong></td>
+            <td>A modern panel with an overview of alarms today and this week, a 7 day chart, the busiest gates and the latest alarms. Create, edit, teleport to, enable, disable and delete detectors without touching a file.</td>
+        </tr>
+        <tr>
+            <td><strong>Alarm Logs</strong></td>
+            <td>Every alarm is logged with the player and the gate. Filter the logs per detector, and old logs are removed automatically after the number of days you set in the panel.</td>
+        </tr>
+        <tr>
+            <td><strong>Secure Discord Logs</strong></td>
+            <td>Alarms and admin actions can be sent to a Discord webhook. The webhook lives in a server only config file that is never sent to players, so it can&#39;t be read from the game.</td>
+        </tr>
+        <tr>
+            <td><strong>Prop Placement Tool</strong></td>
+            <td>Admins can line the hand detector up in the hand with a live in-game tool and copy the exact position and rotation into the config.</td>
+        </tr>
+        <tr>
+            <td><strong>Wide Compatibility</strong></td>
+            <td>Detects ESX, QBCore and Qbox automatically, with no extra core resource needed. Reads ox_inventory, qs-inventory, codem-inventory, tgiann-inventory and every inventory that keeps the framework&#39;s item list, ESX loadouts included. Notifications work with ox_lib, okokNotify or ps-ui. The framework and module bridges are left open so you can adapt them in minutes.</td>
+        </tr>
+        <tr>
+            <td><strong>Highly Configurable</strong></td>
+            <td>Adjust categories, items, alert jobs, the alert itself, exempt jobs, trigger box size, cooldown, light, sounds, the hand detector&#39;s rules and animations, commands and much more. English and Turkish locales are included and new languages can be added easily.</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>
+    <br>
+</p>
+
+<h3>Requirements</h3>
+
+<table>
+    <tbody>
+        <tr>
+            <td><strong>ox_lib</strong></td>
+            <td>https://github.com/overextended/ox_lib/releases/latest</td>
+        </tr>
+        <tr>
+            <td><strong>oxmysql</strong></td>
+            <td>https://github.com/overextended/oxmysql/releases/latest</td>
+        </tr>
+        <tr>
+            <td><strong>Framework</strong></td>
+            <td>es_extended, qb-core or qbx_core</td>
+        </tr>
+        <tr>
+            <td><strong>Target</strong></td>
+            <td>ox_target or qb-target (optional, for the hand detector)</td>
+        </tr>
+        <tr>
+            <td><strong>OneSync</strong></td>
+            <td>OneSync enabled</td>
+        </tr>
+    </tbody>
+</table>
