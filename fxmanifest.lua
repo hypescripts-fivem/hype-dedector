@@ -2,7 +2,7 @@ fx_version 'cerulean'
 game { 'gta5' }
 
 author 'vezironi'
-description 'Walk-through metal detectors with an admin menu'
+description 'Hype Dedector adds walk-through metal detectors and a handheld detector to FiveM. Admins place gates from an in-game panel, the gate lights up and beeps when a player carries metal, and police and security get an alert. Results only say metal or clean, never what was found.'
 
 scriptname 'hype-dedector'
 version '1.0.0'
